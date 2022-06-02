@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react"
 const DayList = props => {
     const [days, setDays] = useState([])
 
-    const fetchData = async () => {
+    const fetchDays = async () => {
         try {
             const response = await fetch('/api/v1/days')
             if (!response.ok) {
@@ -19,14 +19,13 @@ const DayList = props => {
     }
 
     useEffect(() => {
-        fetchData()
+        fetchDays()
     },[])
 
     const dayListItems = days.map((day) => {
         return( 
         <li key={day.id} date={day.date}> 
-        {day.date}
-        
+            {day.date}
         </li>
         )
     })
@@ -39,7 +38,5 @@ const DayList = props => {
             </ul>
         </div>
     )
-    }
-
-
+}
 export default DayList

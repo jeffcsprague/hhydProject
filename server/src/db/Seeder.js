@@ -1,8 +1,6 @@
 import { connection } from "../boot.js"
 import DaysSeeder from "./migrations/Seeder/DaysSeeder.js"
 
-
-
 class Seeder {
   static async seed() {
     // include individual seed commands here

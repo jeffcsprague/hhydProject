@@ -19,8 +19,6 @@ class DaysSeeder {
 
       const dates = getDates(new Date(2022, 0, 1), new Date(2022, 11, 31));
 //keep in mind that the monthIndex parameter is 0-based. This means that January = 0 and December = 11.
-      console.log(dates)
-    
 
     for (const singleDayData of dates) {
       const currentDay = await Day.query().findOne({ date: singleDayData })
