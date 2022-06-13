@@ -1,16 +1,28 @@
 import express from "express"
-import { Day }from "../../../models/index.js"
+import reviewFormRouter from "./reviewFormRouter.js"
+import { Day } from "../../../models/index.js"
 import DaySerializer from "../../../serializers/DaySerializer.js"
 
 const daysRouter = new express.Router()
 
+daysRouter.use("/:daysId/reviews",reviewFormRouter )
+
 daysRouter.get("/", async (req, res) => {
     try {
         const days = await Day.query()
-        const serializedDays = days.map(day => DaySerializer.getSummary(day))
-        return res.status(200).json({days: serializedDays})
+        return res.status(200).json({days: days})
     }   catch (error) {
-        return res.status(500).json({ errors: error })          
+        return res.status(500).json({ errors: err })          
+    }
+})
+
+daysRouter.get("/:id", async (req, res) => {
+    try {
+        const day = await Day.query().findById(req.params.id)
+        const serializedDay = await DaySerializer.getDetails(day)
+        return res.status(200).json({ day: serializedDay })
+    }   catch (err) {
+        return res.status(500).json({ errors: err})
     }
 })
 

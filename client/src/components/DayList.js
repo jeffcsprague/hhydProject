@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
 
 const DayList = props => {
     const [days, setDays] = useState([])
@@ -24,15 +25,17 @@ const DayList = props => {
 
     const dayListItems = days.map((day) => {
         return( 
-        <li key={day.id} date={day.date}> 
+        <li key={day.id}>
+            <Link to={`/days/${day.id}`}>
             {day.date}
+            </Link>
         </li>
         )
     })
 
     return (
-        <div>
-            <h1> Pick a Day</h1>
+        <div className="mainDiv">
+            <h1 className="header">Pick a Day</h1>
             <ul>
                 {dayListItems}
             </ul>
