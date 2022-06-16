@@ -2,5 +2,6 @@
 const Model = require("./Model")
 const User = require("./User.js")
 const Day = require("./Day.js")
+const Review = require("./Review.js")
 
-module.exports = {Model, User, Day};
+module.exports = {Model, User, Day, Review};
