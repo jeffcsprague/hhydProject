@@ -10,10 +10,10 @@ reviewFormRouter.post("/", async (req, res) => {
     const { body } = req 
     const formInput = cleanUserInput(body)
     const { rating, content } = formInput
-    const { daysId } = req.params
+    const { dayId } = req.params
 
     try {
-        const newReview = await Review.query().insertAndFetch({ rating, content, daysId })
+        const newReview = await Review.query().insertAndFetch({ rating, content, dayId })
         return res.status(201).json({ review: newReview })
     }   catch (error) {
         if (error instanceof ValidationError) {
