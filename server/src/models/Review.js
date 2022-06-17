@@ -10,8 +10,8 @@ class Review extends Model {
             type: "object",
             required: [ "rating"],
             properties: {
-                rating: { type: "integer" },
-                body: { type: "string", minLength: 0, maxLength: 300 },
+                rating: { type: ["string", "integer"] },
+                content: { type: "string", minLength: 0, maxLength: 300 },
             }
         }
     }

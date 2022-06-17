@@ -46,20 +46,8 @@ class User extends uniqueFunc(Model) {
   }
 
   static get relationMappings() {
-    const { Day, Review } = require("./index.js")
+    const { Review } = require("./index.js")
     return {
-      days: {
-        relation: Model.ManyToManyRelation,
-        modelClass: Day,
-        join: {
-          from: "users.id",
-          through: { 
-            from: "reviews.userId",
-            to: "reviews.dayId",
-          },
-          to: "days.id"
-        }
-      },
       reviews: {
         relation: Model.HasManyRelation,
         modelClass: Review,

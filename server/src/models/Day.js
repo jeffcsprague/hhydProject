@@ -16,21 +16,9 @@ class Day extends Model {
   }
 */
   static get relationMappings() {
-    const { User, Review } = require("./index.js")
+    const { Review } = require("./index.js")
 
     return {
-      users: {
-        relation: Model.ManyToManyRelation,
-        modelClass: User,
-        join: {
-          from: "days.id",
-          through: {
-            from: "reviews.dayId",
-            to: "reviews.userId",
-          },
-          to: "users.id"
-        }
-      },
       reviews: {
         relation: Model.HasManyRelation,
         modelClass: Review,
