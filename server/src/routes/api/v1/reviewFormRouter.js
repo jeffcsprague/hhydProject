@@ -1,20 +1,16 @@
 import express from "express"
-import objection from "objection"
 import { Review } from "../../../models/index.js"
 import cleanUserInput from "../../../services/cleanUserInput.js"
-const { ValidationError } = objection
+import { ValidationError } from "objection"
 
 const reviewFormRouter = new express.Router({ mergeParams: true })
 
 reviewFormRouter.post("/", async (req, res) => {
-    const { body } = req 
-    const formInput = cleanUserInput(body)
-    const { rating, content } = formInput
-    const { dayId } = req.params
-
+   
+    const formInput = cleanUserInput(req.body)
     try {
-        const newReview = await Review.query().insertAndFetch({ rating, content, dayId })
-        return res.status(201).json({ review: newReview })
+        const newReview = await Review.query().insertAndFetch({ ...formInput, dayId: req.params.dayId, userId: req.user.id })                  
+        res.status(201).json({review: newReview})
     }   catch (error) {
         if (error instanceof ValidationError) {
             return res.status(422).json({ errors: error.data })

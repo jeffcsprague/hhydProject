@@ -10,7 +10,7 @@ daysRouter.use("/:daysId/reviews",reviewFormRouter )
 daysRouter.get("/", async (req, res) => {
     try {
         const days = await Day.query()
-        return res.status(200).json({days: days})
+        return res.status(200).json({ days })
     }   catch (error) {
         return res.status(500).json({ errors: err })          
     }
