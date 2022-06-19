@@ -6,10 +6,17 @@ import { ValidationError } from "objection"
 const reviewFormRouter = new express.Router({ mergeParams: true })
 
 reviewFormRouter.post("/", async (req, res) => {
-   
-    const formInput = cleanUserInput(req.body)
+  
+   const { body } = req
+    const formInput = cleanUserInput(body)
+    console.log("formInput:", formInput)
+    const { rating, content } = formInput
+    
+ 
     try {
-        const newReview = await Review.query().insertAndFetch({ ...formInput, dayId: req.params.dayId, userId: req.user.id })                  
+        //breaking on line 18!!!!!!!!
+        const newReview = await Review.query().insertAndFetch({ rating, content })
+        console.log(newReview)                  
         res.status(201).json({review: newReview})
     }   catch (error) {
         if (error instanceof ValidationError) {

@@ -10,7 +10,7 @@ class DaySerializer {
             serializedDays[attribute] = day[attribute]
             }
 
-            const relatedReviews = await holiday.$relatedQuery("reviews")
+            const relatedReviews = await day.$relatedQuery("reviews")
             const serializedReviews = await Promise.all(
                 relatedReviews.map(async (review) => await ReviewSerializer.getSummary(review))
             )

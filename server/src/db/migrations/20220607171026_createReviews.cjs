@@ -2,6 +2,8 @@
  * @typedef {import("knex")} Knex
  */
 
+const { default: knex } = require("knex")
+
 /**
  * @param {Knex} knex
  */
@@ -21,4 +23,6 @@ exports.up = async (knex) => {
 /**
  * @param {Knex} knex
  */
-exports.down = (knex) => {}
+exports.down = (knex) => {
+    return knex.schema.dropTableIfExists("reviews")
+}

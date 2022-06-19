@@ -12,11 +12,11 @@ const DayShow = props => {
     })
     const [errors, setErrors] = useState([])
 
-    const daysId = props.match.params.id
+    const dayId = props.match.params.id
 
     const getDay = async () => {
         try {
-            const response = await fetch(`/api/v1/days/${daysId}`)
+            const response = await fetch(`/api/v1/days/${dayId}`)
             if (!response.ok) {
                 const errorMessage = `${response.status} (${response.statusText})`
                 const error = new Error(errorMessage)
@@ -34,14 +34,16 @@ const DayShow = props => {
     }, [])
 
     const postReview = async (newReviewData) => {
+        console.log(dayId)
         try {
-            const response = await fetch(`/api/v1/days/${daysId}/reviews`, {
+            const response = await fetch(`/api/v1/days/${dayId}/reviews`, {
             method: "POST",
             headers: new Headers({
                 "Content-Type": "application/json"
             }),
             body: JSON.stringify(newReviewData)    
             })
+            console.log("response:", response)
             if (!response.ok) {
                 if(response.status === 422) {
                     const body = await response.json()
