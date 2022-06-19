@@ -14,6 +14,7 @@ const NewReviewForm = ({ postReview }) => {
     }
 
     const handleSubmit = (event) => {
+        console.log(newReview)
         event.preventDefault()
         postReview(newReview)
         clearForm()

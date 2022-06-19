@@ -8,7 +8,7 @@ class Review extends Model {
     static get jsonSchema() {
         return {
             type: "object",
-            required: [ "rating"],
+            required: [ "userId", "dayId", "rating" ],
             properties: {
                 rating: { type: ["string", "integer"] },
                 content: { type: "string", minLength: 0, maxLength: 300 },
