@@ -1,7 +1,7 @@
 import ReviewSerializer from "./ReviewSerializer.js"
 
 class DaySerializer {
-    static async getSummary(day) {
+    static async getDetail(day) {
         try{
             const allowedAttributes = ["id", "date"]
        
