@@ -66,8 +66,8 @@ const DayShow = props => {
         }
     }
 
-    const ReviewTiles = day.reviews.map(reviewObject => {
-        return(
+    const ReviewTiles = day.reviews.map((reviewObject) => {
+        return (
             <ReviewTile
             key={reviewObject.id}
             {...reviewObject}
