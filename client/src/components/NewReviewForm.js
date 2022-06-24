@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-const NewReviewForm = ({ postReview }) => {
+const NewReviewForm = ({ postReview, thisDate }) => {
     const [newReview, setNewReview] = useState({
         rating: "",
         content: ""
@@ -41,7 +41,7 @@ const NewReviewForm = ({ postReview }) => {
                 </label>
 
                 <div>
-                    <h1>Day Placeholder</h1>
+                    <h1>{thisDate}</h1>
                 </div>
 
                 <label>

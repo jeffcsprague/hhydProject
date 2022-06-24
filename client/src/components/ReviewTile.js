@@ -5,9 +5,7 @@ const ReviewTile = ({ id, userId, rating, content, createdAt }) => {
     return(
         <div className="callout">
             <h5>
-                <Link to={`/days/${id}`}>
-                    {date}
-                </Link>
+                <Link to={`/days/${id}`}></Link>
             </h5>
             {rating}
             {userId}

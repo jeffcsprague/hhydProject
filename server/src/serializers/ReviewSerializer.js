@@ -3,7 +3,7 @@ import UserSerializer from "./UserSerializer.js"
 class ReviewSerializer {
     static async getSummary(review) {
         try {
-            const allowedAttributes = ["id", "userId", "dayId", "rating", "body", "createdAt"]
+            const allowedAttributes = ["id", "userId", "dayId", "rating", "content", "createdAt"]
         
             const serializedReview = {}
             for (const attribute of allowedAttributes) {

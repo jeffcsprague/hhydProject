@@ -13,8 +13,10 @@ const DayShow = props => {
     const [errors, setErrors] = useState([])
 
     const dayId = props.match.params.id
+    const thisDate = day.date
+    console.log("This Date Experiment:", thisDate)
 
-    const getDay = async () => {
+    const getReviews = async () => {
         try {
             const response = await fetch(`/api/v1/days/${dayId}`)
             if (!response.ok) {
@@ -30,12 +32,13 @@ const DayShow = props => {
     }
 
     useEffect(() => {
-        getDay()
+        getReviews()
     }, [])
 
     const postReview = async (newReviewData) => {
         console.log(dayId)
         try {
+            console.log(newReviewData)
             const response = await fetch(`/api/v1/days/${dayId}/reviews`, {
             method: "POST",
             headers: new Headers({
@@ -77,13 +80,16 @@ const DayShow = props => {
     
     return(
         <div className="mainDiv">
-            <h1 className="header"> {day.date}</h1>
+            <h1 className="header"> 
+            {thisDate}
+            </h1>
             <h4>Reviews</h4>
             {ReviewTiles}
             <div>
                 <ErrorListForm errors={errors} />
                 <NewReviewForm
                     postReview={postReview}
+                    thisDate = {thisDate}
                 />
             </div>
         </div>
