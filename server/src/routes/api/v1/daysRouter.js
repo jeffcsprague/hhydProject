@@ -5,7 +5,7 @@ import DaySerializer from "../../../serializers/DaySerializer.js"
 
 const daysRouter = new express.Router()
 
-daysRouter.use("/:daysId/reviews",reviewFormRouter )
+daysRouter.use("/:dayId/reviews",reviewFormRouter )
 
 daysRouter.get("/", async (req, res) => {
     try {

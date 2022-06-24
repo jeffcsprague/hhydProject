@@ -5,16 +5,16 @@ class Review extends Model {
         return "reviews"
     }
 
-    static get jsonSchema() {
-        return {
-            type: "object",
-            required: [ "userId", "dayId", "rating" ],
-            properties: {
-                rating: { type: ["string", "integer"] },
-                content: { type: "string", minLength: 0, maxLength: 300 },
-            }
-        }
-    }
+    // static get jsonSchema() {
+    //     return {
+    //         type: "object",
+    //         required: [ "userId", "dayId", "rating" ],
+    //         properties: {
+    //             rating: { type: ["string", "integer"] },
+    //             content: { type: "string", minLength: 0, maxLength: 300 },
+    //         }
+    //     }
+    // }
 
     static get relationMappings() {
         const { User, Day } = require("./index.js")

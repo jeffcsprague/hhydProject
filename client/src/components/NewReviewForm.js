@@ -3,7 +3,7 @@ import React, { useState } from "react"
 const NewReviewForm = ({ postReview }) => {
     const [newReview, setNewReview] = useState({
         rating: "",
-        content: "",
+        content: ""
     })
 
     const handleInputChange = event => {
