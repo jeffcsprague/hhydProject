@@ -1,6 +1,9 @@
 @import "./foundation/settings";
 @import "~foundation-sites/scss/foundation";
 @include foundation-everything;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 // place global css here
 *,
 *::before,
@@ -12,3 +15,62 @@
   -moz-tab-size: 4;
   tab-size: 4;
 }
+
+.top-bar {
+  background: #000;
+  font-family: "Poppins";
+  font-weight: 600;
+
+  .menu {
+    background: #000;
+   
+  }
+}
+
+.home,
+.home:visited {
+  color: 	#FFFFFF;
+  font-weight: 900;
+
+}
+
+sign-in,
+.sign-in:visited {
+  color: #FFFFFF;
+}
+
+.sign-in:hover {
+  color: #a0a5a8;
+}
+
+.home:hover {
+  color: #a0a5a8;
+}
+
+.home-page {
+  background-image: url("../img/hhyd-2.png");
+  width: auto;
+  height: 630px;
+  background-size: auto 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flexbox;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  background-attachment: fixed;
+
+}
+
+.button:visited,
+.button {
+    color: #FFFFFF;
+    background: #71797E;
+    font-family: "Poppins";
+    font-weight: 700;
+    max-width: 275px;
+  }
+
+  .button:Hover {
+    background: #a0a5a8;
+  
+  }
