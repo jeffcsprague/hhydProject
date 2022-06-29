@@ -9,6 +9,7 @@ import SignInForm from "./authentication/SignInForm";
 import TopBar from "./layout/TopBar";
 import DayList from "./DayList";
 import DayShow from "./DayShow";
+import Home from "./Home";
 
 const App = (props) => {
   const [currentUser, setCurrentUser] = useState(undefined);
@@ -29,9 +30,7 @@ const App = (props) => {
     <Router>
       <TopBar user={currentUser} />
       <Switch>
-        <Route exact path="/">
-          <h2>Hello from react</h2>
-        </Route>
+        <Route exact path="/" component={Home} />
         <Route exact path="/days" component={DayList} />
         <Route exact path="/days/:id" component={DayShow} />
         <Route exact path="/users/new" component={RegistrationForm} />
