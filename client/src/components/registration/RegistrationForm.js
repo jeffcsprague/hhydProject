@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import FormError from "../layout/FormError";
 import config from "../../config";
 
+
+
+
 const RegistrationForm = () => {
   const [userPayload, setUserPayload] = useState({
     email: "",
@@ -82,22 +85,22 @@ const RegistrationForm = () => {
   };
 
   if (shouldRedirect) {
-    location.href = "/";
+    location.href = "/days";
   }
 
   return (
-    <div className="grid-container">
-      <h1>Register</h1>
+    <div className="grid-x-extended registration-form ">
+      <h1 className="text-center registration-header">Create<br/>Account</h1>
       <form onSubmit={onSubmit}>
-        <div>
-          <label>
+        <div className= "grid-container text-center input-labels">
+          <label className= "input-labels">
             Email
             <input type="text" name="email" value={userPayload.email} onChange={onInputChange} />
             <FormError error={errors.email} />
           </label>
         </div>
-        <div>
-          <label>
+        <div className= "grid-container text-center input-labels">
+          <label className= "input-labels">
             Password
             <input
               type="password"
@@ -105,11 +108,11 @@ const RegistrationForm = () => {
               value={userPayload.password}
               onChange={onInputChange}
             />
-            <FormError error={errors.password} />
+            <FormError error={errors.password}/>
           </label>
         </div>
-        <div>
-          <label>
+        <div className= "grid-container text-center input-labels">
+          <label className= "input-labels">
             Password Confirmation
             <input
               type="password"
@@ -120,10 +123,12 @@ const RegistrationForm = () => {
             <FormError error={errors.passwordConfirmation} />
           </label>
         </div>
-        <div>
-          <input type="submit" className="button" value="Register" />
+        <div className="box flex-container align-center align middle register-button">
+          <input type="submit" className="button expanded" value="Register" />
         </div>
       </form>
+      <div className="grid-x align-center fill"></div>
+      <div className="grid-x align-center align-middle footer">© 2022 Hey How’s Your Day</div>
     </div>
   );
 };
