@@ -17,26 +17,26 @@
 }
 
 .top-bar {
-  background: #000;
+  background: black;
   font-family: "Poppins";
   font-weight: 600;
+  border-bottom: 1px solid;
+  border-bottom-color: white;
 
   .menu {
-    background: #000;
-   
+    background: black;
   }
 }
 
 .home,
 .home:visited {
-  color: 	#FFFFFF;
+  color: 	white;
   font-weight: 900;
-
 }
 
 sign-in,
 .sign-in:visited {
-  color: #FFFFFF;
+  color: white;
 }
 
 .sign-in:hover {
@@ -48,29 +48,121 @@ sign-in,
 }
 
 .home-page {
-  background-image: url("../img/hhyd-2.png");
-  width: auto;
-  height: 630px;
-  background-size: auto 65%;
+  background: url("../img/hhyd-3.png");
+  width: 100%;
+  height: 600px;
+  background-size: auto 75%;
   background-repeat: no-repeat;
-  background-position: center;
-  display: flexbox;
-  margin-top: .5em;
-  margin-bottom: .5em;
-  background-attachment: fixed;
-
+  background-position:center;
+  margin-top: 1.75em;
 }
 
+
+.button:active,
 .button:visited,
 .button {
-    color: #FFFFFF;
-    background: #71797E;
-    font-family: "Poppins";
-    font-weight: 700;
-    max-width: 275px;
+  color: white;
+  background: #71797E;
+  font-family: "Poppins";
+  font-weight: 600;
+  max-width: 325px;
+}
+
+.button:Hover {
+    opacity: 54%;
   }
 
-  .button:Hover {
-    background: #a0a5a8;
-  
-  }
+.sign-in-header {
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 4em;
+  padding-top: 1em;
+  letter-spacing: -.2rem;
+}
+
+.sign-in-email {
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.sign-in-password {
+  max-width: 350px;
+}
+
+.sign-in-email {
+  max-width: 350px;
+}
+
+.sign-in-button {
+  margin-top: 3em;
+}
+
+.registration-header {
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 4em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  letter-spacing: -.1rem;
+  color: white;
+  line-height: 1em;
+}
+
+.registration-form {
+  background-color: black;
+  padding-bottom:25em;
+}
+
+.footer {
+  margin-top: 1rem;
+  padding: 1.9rem;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-top: 1px solid;
+  border-top-color: white;
+ 
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: .8em; 
+}
+
+.register-button {
+  padding-top: 1em;
+  padding-bottom: 4em;
+}
+
+.input-labels {
+  max-width: 350px;
+  font-family: "Poppins";
+  font-weight: 600;
+  color: white;
+}
+
+.need-account-text {
+  font-family: "Poppins";
+  font-weight: 700;
+  color: black;
+  padding-top: 6em;
+  font-size: 1em; 
+}
+
+.need-account-text:Hover {
+  color: #a0a5a8;
+}
+
+.fill {
+  background-color: black;
+}
+
+
+
+
+
+
+
+
