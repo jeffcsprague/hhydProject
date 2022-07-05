@@ -11,10 +11,19 @@ const DayShow = props => {
         reviews: []
     })
     const [errors, setErrors] = useState([])
-
+    
     const dayId = props.match.params.id
+    console.log(dayId)
     const thisDate = day.date
     console.log("This Date Experiment:", thisDate)
+
+    // const readable_date = new Date(thisDate).toDateString()
+    // console.log(readable_date)
+
+    const formatDate = new Date(thisDate).toLocaleDateString('en-us', { year:"numeric", month:"numeric", day:"numeric"}) 
+    console.log(formatDate)
+    const newDate = formatDate.replace(/-|\//g, ".")
+    console.log(newDate)
 
     const getReviews = async () => {
         try {
@@ -81,7 +90,7 @@ const DayShow = props => {
     return(
         <div className="mainDiv">
             <h1 className="header"> 
-            {thisDate}
+            {newDate}
             </h1>
             <h4>Reviews</h4>
             {ReviewTiles}
@@ -89,7 +98,7 @@ const DayShow = props => {
                 <ErrorListForm errors={errors} />
                 <NewReviewForm
                     postReview={postReview}
-                    thisDate = {thisDate}
+                    thisDate = {newDate}
                 />
             </div>
         </div>

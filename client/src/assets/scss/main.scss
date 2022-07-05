@@ -2,7 +2,7 @@
 @import "~foundation-sites/scss/foundation";
 @include foundation-everything;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 // place global css here
 *,
@@ -22,6 +22,8 @@
   font-weight: 600;
   border-bottom: 1px solid;
   border-bottom-color: white;
+
+  
 
   .menu {
     background: black;
@@ -50,11 +52,11 @@ sign-in,
 .home-page {
   background: url("../img/hhyd-3.png");
   width: 100%;
-  height: 600px;
-  background-size: auto 75%;
+  height:550px;
+  background-size: auto 93%;
   background-repeat: no-repeat;
   background-position:center;
-  margin-top: 1.75em;
+  margin-top: 4em;
 }
 
 
@@ -76,8 +78,8 @@ sign-in,
   font-family: "Poppins";
   font-weight: 800;
   font-size: 4em;
-  padding-top: 1em;
-  letter-spacing: -.2rem;
+  padding-top: 2em;
+  letter-spacing: -.1rem;
 }
 
 .sign-in-email {
@@ -101,17 +103,14 @@ sign-in,
   font-family: "Poppins";
   font-weight: 800;
   font-size: 4em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 2em;
+  padding-bottom: .25em;
   letter-spacing: -.1rem;
-  color: white;
+  color: black;
   line-height: 1em;
 }
 
-.registration-form {
-  background-color: black;
-  padding-bottom:25em;
-}
+
 
 .footer {
   margin-top: 1rem;
@@ -140,15 +139,16 @@ sign-in,
   max-width: 350px;
   font-family: "Poppins";
   font-weight: 600;
-  color: white;
+  color: black;
 }
 
 .need-account-text {
   font-family: "Poppins";
-  font-weight: 700;
-  color: black;
-  padding-top: 6em;
+  font-weight: 400;
+  color: 		#282828;
+  padding-top: 2.5em;
   font-size: 1em; 
+  letter-spacing: -.05rem;
 }
 
 .need-account-text:Hover {
@@ -159,7 +159,34 @@ sign-in,
   background-color: black;
 }
 
+.daylist-header {
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 4em;
+  padding-top: 1em;
+  letter-spacing: -.1rem;
+}
 
+
+.list {
+  font-family: "Azeret Mono";
+  font-weight: 300;
+  color: black;
+  height: 325px;
+  width:325px;
+  margin: auto;
+  overflow-y: scroll;
+  margin-top: .5em;
+  margin-bottom: .1em;
+  scrollbar-color: auto;
+  scrollbar-width: auto;
+
+}
+.shadow_inner {
+  margin-top: 2.5em;
+  border: 1px solid #E8E8E8;
+  box-shadow: 2px 4px 2px #B0B0B0 inset;
+}
 
 
 

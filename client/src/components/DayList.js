@@ -20,8 +20,11 @@ const DayList = props => {
     }
 
     useEffect(() => {
+
         fetchDays()
     },[])
+
+ 
 
     const dayListItems = days.map((day) => {
         return( 
@@ -33,13 +36,33 @@ const DayList = props => {
         )
     })
 
+    // let dates_arr = dayListItems
+    // dates_arr = dates_arr.map((element) => {
+    //     const d = new Date(element)
+    //     return `${d.toDateString()}`
+    //   })
+    //   console.log("Dates in the format MM/DD/YYYY : \n", dates_arr);
+
+
+
     return (
-        <div className="mainDiv">
-            <h1 className="header">Pick a Day</h1>
-            <ul>
-                {dayListItems}
-            </ul>
+        <div>
+            <div className="grid-x align-center daylist-page">
+                <h1 className="text-center daylist-header">Pick Your Day</h1>
+            </div>
+        
+            <div className="grid-x align-center daylist">
+            <div className='shadow_inner'>
+                <div className="grid-x align-center list">
+                 <ul>
+                    {dayListItems}
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <div className="grid-x align-center align-middle footer">© 2022 Hey How’s Your Day</div>
         </div>
     )
 }
 export default DayList
+
