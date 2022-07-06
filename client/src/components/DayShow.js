@@ -88,19 +88,20 @@ const DayShow = props => {
     })
     
     return(
-        <div className="mainDiv">
-            <h1 className="header"> 
-            {newDate}
-            </h1>
-            <h4>Reviews</h4>
-            {ReviewTiles}
-            <div>
-                <ErrorListForm errors={errors} />
-                <NewReviewForm
-                    postReview={postReview}
-                    thisDate = {newDate}
-                />
+        <div className="grid-container mainDiv">
+             <div className="grid-container  align-center days-show-symbol">
+
             </div>
+            <div className="grid-container align-center days-show-header">
+                <h1 className="text-center days-show-header-text">{newDate}</h1>
+            </div>
+            <div className="box flex-container align-center align middle add-review-button">
+                <input type="submit" className="button expanded" value="Add Review" />
+            </div>
+            <div className="grid-container align-center days-show-review-tiles">{ReviewTiles}
+            </div>
+              
+            <div className="grid-x align-center align-middle footer">© 2022 Hey How’s Your Day</div>
         </div>
     )
 }
