@@ -66,7 +66,7 @@ sign-in,
   color: white;
   background: #71797E;
   font-family: "Poppins";
-  font-weight: 600;
+  font-weight: 800;
   max-width: 325px;
 }
 
@@ -189,7 +189,82 @@ sign-in,
 }
 
 
+.days-show-header-text {
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 4em;
+  letter-spacing: -.1rem;
+}
+
+.days-show-symbol {
+  background: url("../img/symbol-1.png");
+  width: 100%;
+  height: 150px;
+  background-size: auto 50%;
+  background-repeat: no-repeat;
+  background-position:center;
+  margin-top: 2em;
+}
+
+.review-tile {
+  font-family: "Poppins";
+  font-weight: 300;
+  border: 2px solid 	#808080;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  max-width: 325px;
+  padding: 1em;
+  font-size: 1em;
+  background-color: white;
+}
 
 
+.days-show-review-tiles {
+  height: 350px;
+  width:325px;
+  margin: auto;
+  overflow-y: scroll;
+  margin-top: .5em;
+  margin-bottom: .1em;
+  scrollbar-color: auto;
+  scrollbar-width: auto;
+  border: 2px solid 	#808080;
+  background-color: #E8E8E8;
+  padding-top: .2em;
+  padding-bottom: .3em;
+}
+
+
+.add-review-button {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.review-tile-rating {
+  font-weight: 700;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: .2em;
+}
+
+.review-tile-content {
+  font-size: .9em;
+
+}
+
+.review-tile-userId {
+  font-weight: 600;
+  font-size: .7em;
+  margin-bottom: .2em;
+
+
+
+}
+
+.review-tile-createdAt {
+  font-size: .6em;
+  text-align: right;
+  margin-bottom: 0;
+}
 
 

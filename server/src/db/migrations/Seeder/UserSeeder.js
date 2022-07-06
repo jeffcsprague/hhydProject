@@ -5,12 +5,16 @@ class UserSeeder {
   static async seed() {
     const userData = [
       {
-        email: "admin@admin.com",
+        email: "purpleorchid@gmail.com",
         cryptedPassword: Bcrypt.hashSync("cheese", 10),
       },
       {
-        email: "middleAgedJennifer@admin.com",
+        email: "Jennifer25487@outlook.com",
         cryptedPassword: Bcrypt.hashSync("manhattan", 10),
+      },
+      {
+        email: "jrothwell34@gmail.com",
+        cryptedPassword: Bcrypt.hashSync("landscape", 10),
       }
     ];
 
