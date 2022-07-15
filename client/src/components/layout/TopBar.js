@@ -23,7 +23,14 @@ const TopBar = ({ user }) => {
         <ul className="menu">
          
           <li>
-          <Link to="/days" className="home">HHYD</Link>
+          <Link to="/" className="home">Hey</Link>
+          </li>
+        </ul>
+      </div>
+      <div className="text-center align-center top-bar-section">
+        <ul className="menu">
+          <li>
+          <Link to="/days" className="home">Days</Link>
           </li>
         </ul>
       </div>

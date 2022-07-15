@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from "react"
-
+import { Link } from "react-router-dom"
 import NewReviewForm from "./NewReviewForm"
 import ReviewTile from "./ReviewTile"
 import ErrorListForm from "./ErrorListForm.js"
 import translateServerErrors from "../services/translateServerErrors"
+import { element } from "prop-types"
+
+const dayjs = require('dayjs')
+//import dayjs from 'dayjs' // ES 2015
+dayjs().format()
 
 const DayShow = props => {
     const [day, setDay] = useState({
@@ -16,14 +21,12 @@ const DayShow = props => {
     console.log(dayId)
     const thisDate = day.date
     console.log("This Date Experiment:", thisDate)
+    // const formatDate = new Date(thisDate).toLocaleDateString('en-us', { year:"numeric", month:"numeric", day:"numeric"}) 
+    // console.log(formatDate)
+    // const newDate = formatDate.replace(/-|\//g, ".")
+    
+    // console.log(newDate)
 
-    // const readable_date = new Date(thisDate).toDateString()
-    // console.log(readable_date)
-
-    const formatDate = new Date(thisDate).toLocaleDateString('en-us', { year:"numeric", month:"numeric", day:"numeric"}) 
-    console.log(formatDate)
-    const newDate = formatDate.replace(/-|\//g, ".")
-    console.log(newDate)
 
     const getReviews = async () => {
         try {
@@ -77,6 +80,27 @@ const DayShow = props => {
     
         }
     }
+console.log(day.reviews)
+
+    const dayRatingArray = day.reviews.map((element) => {
+        return element.rating
+    })
+
+    const dayRatingSum = dayRatingArray.reduce((a, b) => a + b, 0)
+    const dayRatingAverage = dayRatingSum/dayRatingArray.length
+    
+
+    
+    let modifiedAverage = dayRatingAverage
+    if (modifiedAverage<=1.6625) {
+        modifiedAverage = "BAD"
+     } else if (modifiedAverage>=2.33125) {
+         modifiedAverage = "GOOD"
+     } else {
+         modifiedAverage = "OK"
+     }
+
+console.log(dayRatingAverage)
 
     const ReviewTiles = day.reviews.map((reviewObject) => {
         return (
@@ -86,19 +110,26 @@ const DayShow = props => {
             />
         )
     })
+
+    console.log(ReviewTiles.rating)
     
     return(
         <div className="grid-container mainDiv">
-             <div className="grid-container  align-center days-show-symbol">
-
+            <div className="grid-container align-center days-show-tagline">READ & WRITE REVIEWS
             </div>
+             <div className="grid-container text-center align-center days-show-average">{modifiedAverage}
+            
+            </div>
+            <p className= "text-center align-center average-rating-text">(AVERAGE RATING)</p>
             <div className="grid-container align-center days-show-header">
-                <h1 className="text-center days-show-header-text">{newDate}</h1>
+                <h1 className="text-center days-show-header-text">{dayjs(thisDate).format("M.DD.YY")}</h1>
             </div>
-            <div className="box flex-container align-center align middle add-review-button">
-                <input type="submit" className="button expanded" value="Add Review" />
-            </div>
-            <div className="grid-container align-center days-show-review-tiles">{ReviewTiles}
+            <div className="grid-container align-center days-show-review-tiles">{ReviewTiles} 
+                <div className="text-center new-review-container">
+                    
+                   <ErrorListForm errors={errors} />
+                    <NewReviewForm postReview={postReview} />
+                </div>
             </div>
               
             <div className="grid-x align-center align-middle footer">© 2022 Hey How’s Your Day</div>
