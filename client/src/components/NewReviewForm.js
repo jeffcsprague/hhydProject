@@ -28,33 +28,40 @@ const NewReviewForm = ({ postReview, thisDate }) => {
     }
 
     return (
-        <div className="callout">
+        <div className="new-review-form" id="new-review-form">
+            <h1 className="new-review-form-header text-left">Add Review</h1>
             <form onSubmit={handleSubmit}>
-                <label>
-                    Rating
-                    <input
-                        type="text"
+                <label className="text-left new-review-form-rating">
+                    Rate this Day
+                    
+                    <select id="choice"
                         name="rating"
                         onChange={handleInputChange}
                         value={newReview.rating}
-                    />
+                    >
+                        <option value="" disabled selected>Select your rating</option>
+                        <option value="2">OK</option>
+                        <option value="3">Good</option>
+                        <option value="1">Bad</option>
+                    </select>
                 </label>
-
-                <div>
-                    <h1>{thisDate}</h1>
-                </div>
-
-                <label>
-                    Review
-                    <input
+                <label className="text-left new-review-form-review ">
+                    Review this Day
+                    <textarea
                         type="text"
                         name="content"
                         onChange={handleInputChange}
                         value={newReview.content}
-                    />
+                        placeholder="300 characters or less"
+                        cols="5"
+                        rows="5"
+                    ></textarea>
+                        
+                    
                 </label>
-                <div className="button-group">
+                <div className="button-group new-review-from-button">
                 <input  className="button" type="submit" value="Submit" />
+                <a name="end"></a>
                 </div>           
             </form>
         </div>

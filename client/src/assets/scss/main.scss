@@ -19,21 +19,21 @@
 .top-bar {
   background: black;
   font-family: "Poppins";
-  font-weight: 600;
+  font-weight: 700;
   border-bottom: 1px solid;
   border-bottom-color: white;
-
-  
-
   .menu {
     background: black;
   }
 }
 
+
+
+
 .home,
 .home:visited {
   color: 	white;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 sign-in,
@@ -50,13 +50,27 @@ sign-in,
 }
 
 .home-page {
-  background: url("../img/hhyd-3.png");
+font-family: "Poppins";
+font-weight: 300;
+font-size: 1.5em;
+letter-spacing:.3rem;
+padding-top: 3em;
+padding-bottom: .25em;
+color: black;
+text-align: center;
+}
+
+
+
+.logo {
+  background: url("../img/logo-1.png");
   width: 100%;
-  height:550px;
-  background-size: auto 93%;
+  height:500px;
+  background-size: auto 90%;
   background-repeat: no-repeat;
   background-position:center;
-  margin-top: 4em;
+  margin-top: 1em;
+  
 }
 
 
@@ -68,6 +82,7 @@ sign-in,
   font-family: "Poppins";
   font-weight: 800;
   max-width: 325px;
+  border-radius: 2%;
 }
 
 .button:Hover {
@@ -84,7 +99,7 @@ sign-in,
 
 .sign-in-email {
   font-family: "Poppins";
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .sign-in-password {
@@ -159,35 +174,64 @@ sign-in,
   background-color: black;
 }
 
+.daylist-tagline {
+  
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 1.5em;
+  letter-spacing:.3rem;
+  padding-top: 3em;
+  padding-bottom: .25em;
+  color: black;
+  text-align: center;
+    
+}
+
 .daylist-header {
   font-family: "Poppins";
   font-weight: 800;
-  font-size: 4em;
-  padding-top: 1em;
+  font-size: 3em;
+  padding: 0em;
   letter-spacing: -.1rem;
+  margin-top: .4em;
+  margin-bottom:0.3em;
 }
 
 
+
 .list {
-  font-family: "Azeret Mono";
-  font-weight: 300;
-  color: black;
-  height: 325px;
+  height: 400px;
   width:325px;
-  margin: auto;
+  font-family:Azeret Mono;
+  font-weight: 300;
+  font-size: 1.25em;
+  color: black;
+  text-align: center;
+  text-justify: inter-character;
   overflow-y: scroll;
   margin-top: .5em;
   margin-bottom: .1em;
   scrollbar-color: auto;
   scrollbar-width: auto;
-
+  box-shadow: 0 0 10px #B0B0B0 inset;
+  background-color: white;
+  padding-top: .2em;
+  padding-bottom: .3em;
+  border: 1px solid #B0B0B0;
 }
-.shadow_inner {
-  margin-top: 2.5em;
-  border: 1px solid #E8E8E8;
-  box-shadow: 2px 4px 2px #B0B0B0 inset;
-}
 
+.days-show-tagline {
+  
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 1.5em;
+  letter-spacing:.3rem;
+  padding-top: 3em;
+  padding-bottom: .3em;
+  color: black;
+  text-align: center;
+    
+}
 
 .days-show-header-text {
   font-family: "Poppins";
@@ -196,42 +240,53 @@ sign-in,
   letter-spacing: -.1rem;
 }
 
-.days-show-symbol {
-  background: url("../img/symbol-1.png");
-  width: 100%;
-  height: 150px;
-  background-size: auto 50%;
-  background-repeat: no-repeat;
-  background-position:center;
-  margin-top: 2em;
+.days-show-average {
+  font-family: "Poppins";
+  font-weight: 900;
+  font-size: 5.54em;
+  letter-spacing: -.05rem;
+  margin: 0em;
+  text-align: center;
+  padding: 0em;
+  line-height: 1em;
+  color:white
 }
+
+.days-show-average {
+  -webkit-text-stroke: 2px#71797E;;
+  
+}
+
+
 
 .review-tile {
   font-family: "Poppins";
   font-weight: 300;
-  border: 2px solid 	#808080;
+  color: 	#383838;
   margin-top: .5em;
-  margin-bottom: .5em;
+  margin-bottom: .9em;
   max-width: 325px;
   padding: 1em;
   font-size: 1em;
-  background-color: white;
+  background-color: white ;
+
 }
 
 
 .days-show-review-tiles {
-  height: 350px;
+  height: 428px;
   width:325px;
-  margin: auto;
+
   overflow-y: scroll;
   margin-top: .5em;
   margin-bottom: .1em;
   scrollbar-color: auto;
   scrollbar-width: auto;
-  border: 2px solid 	#808080;
+  box-shadow: 0 0 10px #B0B0B0 inset;
   background-color: #E8E8E8;
   padding-top: .2em;
   padding-bottom: .3em;
+  border: 1px solid #B0B0B0;
 }
 
 
@@ -241,30 +296,99 @@ sign-in,
 }
 
 .review-tile-rating {
-  font-weight: 700;
-  font-size: 1.5em;
-  text-align: center;
-  margin-bottom: .2em;
+  font-weight: 800;
+  font-size: 1em;
+  text-align: left;
+  margin-top: .1em;
+  margin-bottom: .25em;
+  letter-spacing: -.02rem;
+  color: 	black;
 }
 
 .review-tile-content {
-  font-size: .9em;
+  font-size: .88em;
+  font-weight: 300;
+  line-height: 1.4em;
+  margin-bottom: 0em;
+ 
+  
 
 }
 
 .review-tile-userId {
   font-weight: 600;
-  font-size: .7em;
-  margin-bottom: .2em;
+  font-size: .9em;
+  margin-bottom: 0em;
+  margin-top: .35em;
+  letter-spacing: -.05rem;
 
-
-
+  
+  color: 	black;
 }
 
 .review-tile-createdAt {
-  font-size: .6em;
+  font-size: .5em;
   text-align: right;
   margin-bottom: 0;
+  margin-top: 0em;
+}
+
+
+.new-review-form {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  max-width: 325px;
+  padding: 1em;
+  font-size: 1em;
+  background-color: black;
+  opacity: 1;
+}
+
+.new-review-form-header {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1em;
+  color: white;
+  padding-top: .5em;
+  padding-bottom: .6em;
+}
+.new-review-form-rating {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: .8em;
+  color: white;
+  
+}
+
+#choice option{ 
+    color: black;
+}
+.empty { 
+  color: gray; 
+}
+
+.new-review-form-review {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: .8em;
+  color: white;
+  padding-bottom: 1em;
+}
+
+.new-review-from-button{
+ margin-top: .3em;
+  margin-bottom: .3em;
+}
+
+.average-rating-text {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: .9em;
+  margin-top: -.1em;
+  margin-bottom: 0em;
+
+  text-align: center;
+
 }
 
 
