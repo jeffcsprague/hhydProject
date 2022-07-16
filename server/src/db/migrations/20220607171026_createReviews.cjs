@@ -13,7 +13,7 @@ exports.up = async (knex) => {
         table.bigInteger("userId").notNullable().unsigned().index().references("users.id")
         table.bigInteger("dayId").notNullable().unsigned().index().references("days.id")
         table.integer("rating").notNullable()
-        table.string("content")
+        table.string("content", 300)
         table.timestamp("createdAt").notNullable().defaultTo(knex.fn.now())
         table.timestamp("updatedAt").notNullable().defaultTo(knex.fn.now())
 
