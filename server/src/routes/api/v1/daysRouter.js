@@ -18,14 +18,9 @@ daysRouter.get("/", async (req, res) => {
 
 daysRouter.get("/:id", async (req, res) => {
     
-    console.log("req.id", req.params.id)
-
-
     try {
         const day = await Day.query().findById(req.params.id)
-        console.log("day object", day)
         const serializedDay = await DaySerializer.getDetail(day)
-        console.log("serialized day", serializedDay)
         return res.status(200).json({ day: serializedDay })
     }   catch (err) {
         return res.status(500).json({ errors: err})
