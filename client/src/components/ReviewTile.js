@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 const ReviewTile = ({ id, userId, rating, content, createdAt }) => {
 
     if (rating<2) {
-       rating = "BAD"
+        rating = "BAD"
     } else if (rating>=3) {
         rating = "GOOD"
     } else {
@@ -12,12 +12,6 @@ const ReviewTile = ({ id, userId, rating, content, createdAt }) => {
     }
     
     const formatDate = new Date(createdAt).toLocaleDateString('en-us', { year:"numeric", month:"numeric", day:"numeric"}) 
-    //console.log(formatDate)
-   
-console.log(ReviewTile)
-
-
-    
     
     return( 
         <div className="grid-container align-center review-tile">
@@ -33,4 +27,3 @@ console.log(ReviewTile)
 }
 
 export default ReviewTile
-

@@ -14,7 +14,6 @@ const NewReviewForm = ({ postReview, thisDate }) => {
     }
 
     const handleSubmit = (event) => {
-        console.log(newReview)
         event.preventDefault()
         postReview(newReview)
         clearForm()
@@ -31,9 +30,7 @@ const NewReviewForm = ({ postReview, thisDate }) => {
         <div className="new-review-form" id="new-review-form">
             <h1 className="new-review-form-header text-left">Add Review</h1>
             <form onSubmit={handleSubmit}>
-                <label className="text-left new-review-form-rating">
-                    Rate this Day
-                    
+                <label className="text-left new-review-form-rating">Rate this Day
                     <select id="choice"
                         name="rating"
                         onChange={handleInputChange}
@@ -45,7 +42,7 @@ const NewReviewForm = ({ postReview, thisDate }) => {
                         <option value="1">Bad</option>
                     </select>
                 </label>
-                <label className="text-left new-review-form-review ">
+                <label className="text-left new-review-form-review">
                     Review this Day
                     <textarea
                         type="text"
@@ -56,11 +53,9 @@ const NewReviewForm = ({ postReview, thisDate }) => {
                         cols="5"
                         rows="5"
                     ></textarea>
-                        
-                    
                 </label>
                 <div className="button-group new-review-from-button">
-                <input  className="button" type="submit" value="Submit" />
+                <input  className="button" type="submit" value="Submit"/>
                 <a name="end"></a>
                 </div>           
             </form>

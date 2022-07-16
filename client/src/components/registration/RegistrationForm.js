@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import FormError from "../layout/FormError";
 import config from "../../config";
 
-
-
-
 const RegistrationForm = () => {
   const [userPayload, setUserPayload] = useState({
     email: "",

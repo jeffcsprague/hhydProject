@@ -28,46 +28,17 @@ const DayList = props => {
         fetchDays()
     },[])
 
-   
-    // const dateArray = days.map((element) => {
-    //     return element.date
-    // })
-
-    // // let modDate = dateArray.toDateString()
-
-    // let dates_arr = dateArray
-    // dates_arr = dates_arr.map((element) => {
-    //     const d = new Date(element)
-    //     return `${d.toDateString()}`
-    //   })
-    //   console.log("Dates in the format MM/DD/YYYY : \n", dates_arr);
-  
-
     const dayListItems = days.map((day) => {
         return(
-         <div>    
-       
+            <div>    
             <div key={day.id}>
                 <Link to={`/days/${day.id}`}>
-
                 {dayjs(day.date).format("MMMM DD YYYY")}
-
                 </Link>
             </div>
-       
-        </div>
-
+            </div>
         )
     })
-
-
-    
-
-console.log(dayListItems)
-
-
-   
-
 
     return (
         <div>
@@ -76,19 +47,16 @@ console.log(dayListItems)
                 <h1 className="text-center daylist-header">Pick a Day</h1>
             </div>
             </div>
-        
             <div className="grid-container daylist">
-           
                 <div className="grid-container align-center text-center list">
-                 <div>
+                <div>
                     {dayListItems}
                 </div>
                 </div>
-        
             </div>
-            <div className="grid-x align-center align-middle footer">© 2022 Hey How’s Your Day</div>
+            <div className="grid-x align-center align-middle footer">© 2022 Hey How’s Your Day
+            </div>
         </div>
     )
 }
 export default DayList
-
