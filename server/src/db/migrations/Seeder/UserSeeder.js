@@ -15,6 +15,18 @@ class UserSeeder {
       {
         email: "jrothwell34@gmail.com",
         cryptedPassword: Bcrypt.hashSync("landscape", 10),
+      },
+      {
+        email: "mrbiggysmalls@starcast.com",
+        cryptedPassword: Bcrypt.hashSync("palace", 10),
+      },
+      {
+        email: "seashore36454@gmail.com",
+        cryptedPassword: Bcrypt.hashSync("winter", 10),
+      },
+      {
+        email: "tobiasdream@workn.com",
+        cryptedPassword: Bcrypt.hashSync("summer", 10),
       }
     ];
 
