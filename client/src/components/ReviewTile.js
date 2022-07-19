@@ -1,7 +1,7 @@
-import React, { useSyncExternalStore } from "react"
+import React from "react"
 import { Link } from "react-router-dom"
 
-const ReviewTile = ({ id, userId, rating, content, createdAt }) => {
+const ReviewTile = ({ id, user, rating, content, createdAt }) => {
 
     if (rating<2) {
         rating = "BAD"
@@ -18,10 +18,10 @@ const ReviewTile = ({ id, userId, rating, content, createdAt }) => {
             <div>
                 <Link to={`/days/${id}`}></Link>
             </div>
-            <p className="review-tile-rating"> {rating}</p>
-            <p className="review-tile-content"> {content}</p>
-            <p className="review-tile-userId"> — user {userId}</p>
-            <p className="review-tile-createdAt"> Reviewed on {formatDate}</p>
+            <p className="review-tile-rating"> {rating} </p>
+            <p className="review-tile-content"> {content} </p>
+            <p className="review-tile-userId">— {user.email} </p>
+            <p className="review-tile-createdAt"> {formatDate} </p>
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 
-const NewReviewForm = ({ postReview, thisDate }) => {
+const NewReviewForm = (props) => {
+    const {postReview} = props
     const [newReview, setNewReview] = useState({
         rating: "",
         content: ""
@@ -17,6 +18,7 @@ const NewReviewForm = ({ postReview, thisDate }) => {
         event.preventDefault()
         postReview(newReview)
         clearForm()
+        window.location.reload()
     }
 
     const clearForm = () => {
@@ -36,7 +38,7 @@ const NewReviewForm = ({ postReview, thisDate }) => {
                         onChange={handleInputChange}
                         value={newReview.rating}
                     >
-                        <option value="" disabled selected>Select your rating</option>
+                        <option defaultValue="disabled selected">Select your rating</option>
                         <option value="2">OK</option>
                         <option value="3">Good</option>
                         <option value="1">Bad</option>
@@ -55,7 +57,7 @@ const NewReviewForm = ({ postReview, thisDate }) => {
                     ></textarea>
                 </label>
                 <div className="button-group new-review-from-button">
-                <input  className="button" type="submit" value="Submit"/>
+                <input  className="button" type="submit" value="Submit"/> 
                 <a name="end"></a>
                 </div>           
             </form>
