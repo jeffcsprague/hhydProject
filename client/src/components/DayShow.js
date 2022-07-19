@@ -62,7 +62,7 @@ const DayShow = props => {
                 const body = await response.json()
                     const updatedReviews = day.reviews.concat(body.review)
                     setErrors([])
-                    setNewReview({...day, reviews: updatedReviews})               
+                    setDay({...day, reviews: updatedReviews})               
             }
         }   catch(error) {
             console.error(`Error in fetch: ${error.message}`)
@@ -93,7 +93,8 @@ const DayShow = props => {
             />
         )
     })
-    
+   
+    console.log(day.reviews)
     return(
         <div className="grid-container mainDiv">
             <div className="grid-container align-center days-show-tagline">READ & WRITE REVIEWS

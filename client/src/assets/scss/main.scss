@@ -27,9 +27,6 @@
   }
 }
 
-
-
-
 .home,
 .home:visited {
   color: 	white;
@@ -60,8 +57,6 @@ color: black;
 text-align: center;
 }
 
-
-
 .logo {
   background: url("../img/logo-1.png");
   width: 100%;
@@ -72,7 +67,6 @@ text-align: center;
   margin-top: 1em;
   
 }
-
 
 .button:active,
 .button:visited,
@@ -124,8 +118,6 @@ text-align: center;
   color: black;
   line-height: 1em;
 }
-
-
 
 .footer {
   margin-top: 1rem;
@@ -197,8 +189,6 @@ text-align: center;
   margin-bottom:0.3em;
 }
 
-
-
 .list {
   height: 400px;
   width:325px;
@@ -230,7 +220,6 @@ text-align: center;
   padding-bottom: .3em;
   color: black;
   text-align: center;
-    
 }
 
 .days-show-header-text {
@@ -258,7 +247,6 @@ text-align: center;
 }
 
 
-
 .review-tile {
   font-family: "Poppins";
   font-weight: 300;
@@ -269,9 +257,7 @@ text-align: center;
   padding: 1em;
   font-size: 1em;
   background-color: white ;
-
 }
-
 
 .days-show-review-tiles {
   height: 428px;
@@ -289,7 +275,6 @@ text-align: center;
   border: 1px solid #B0B0B0;
 }
 
-
 .add-review-button {
   padding-top: 1em;
   padding-bottom: 1em;
@@ -297,42 +282,38 @@ text-align: center;
 
 .review-tile-rating {
   font-weight: 800;
-  font-size: 1em;
+  font-size: .95em;
   text-align: left;
-  margin-top: .1em;
-  margin-bottom: .25em;
+  margin-top: .18em;
+  margin-bottom: .1em;
   letter-spacing: -.02rem;
-  color: 	black;
+  color: 	#303030;
 }
 
 .review-tile-content {
-  font-size: .88em;
+  font-size: .85em;
   font-weight: 300;
-  line-height: 1.4em;
+  line-height: 1.5em;
   margin-bottom: 0em;
- 
-  
-
 }
 
 .review-tile-userId {
   font-weight: 600;
-  font-size: .9em;
+  font-size: .73em;
   margin-bottom: 0em;
-  margin-top: .35em;
-  letter-spacing: -.05rem;
-
-  
-  color: 	black;
+  margin-top: .38em;
+  letter-spacing: 0rem;
+  color: 	#303030;
 }
 
 .review-tile-createdAt {
+  font-weight: 400;
   font-size: .5em;
   text-align: right;
   margin-bottom: 0;
   margin-top: 0em;
+  color: 	#303030;
 }
-
 
 .new-review-form {
   margin-top: .5em;
@@ -357,7 +338,6 @@ text-align: center;
   font-weight: 300;
   font-size: .8em;
   color: white;
-  
 }
 
 #choice option{ 
@@ -386,9 +366,7 @@ text-align: center;
   font-size: .9em;
   margin-top: -.1em;
   margin-bottom: 0em;
-
   text-align: center;
-
 }
 
 

@@ -30,12 +30,10 @@ const DayList = props => {
 
     const dayListItems = days.map((day) => {
         return(
-            <div>    
             <div key={day.id}>
                 <Link to={`/days/${day.id}`}>
-                {dayjs(day.date).format("MMMM DD YYYY")}
+                    {dayjs(day.date).format("MMMM DD YYYY")}
                 </Link>
-            </div>
             </div>
         )
     })
