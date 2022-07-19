@@ -92,9 +92,10 @@ const DayShow = props => {
             {...reviewObject}
             />
         )
-    })
+    })   
    
-    console.log(day.reviews)
+    const reversed = ReviewTiles.reverse()
+   
     return(
         <div className="grid-container mainDiv">
             <div className="grid-container align-center days-show-tagline">READ & WRITE REVIEWS
