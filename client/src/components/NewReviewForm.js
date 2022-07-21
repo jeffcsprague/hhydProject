@@ -56,7 +56,7 @@ const NewReviewForm = (props) => {
                         rows="5"
                     ></textarea>
                 </label>
-                <div className="button-group new-review-from-button">
+                <div className="button-group new-review-form-button">
                 <input  className="button" type="submit" value="Submit"/> 
                 <a name="end"></a>
                 </div>           
