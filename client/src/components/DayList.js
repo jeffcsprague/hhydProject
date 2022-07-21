@@ -40,7 +40,7 @@ const DayList = props => {
 
     return (
         <div>
-            <div className="grid-container align-center daylist-tagline">EVERY DAY STARTS THE SAME WAY
+            <div className="grid-container align-center daylist-tagline">
             <div className="grid-container align-center daylist-page">
                 <h1 className="text-center daylist-header">Pick a Day</h1>
             </div>
