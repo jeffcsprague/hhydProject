@@ -3,6 +3,7 @@
 @include foundation-everything;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 // place global css here
 *,
@@ -27,32 +28,22 @@
   }
 }
 
-.home,
-.home:visited {
+.home {
   color: 	white;
   font-weight: 700;
 }
 
-sign-in,
-.sign-in:visited {
+.sign-in {
   color: white;
 }
 
-.sign-in:hover {
-  color: #a0a5a8;
-}
-
-.home:hover {
-  color: #a0a5a8;
-}
-
 .home-page {
-font-family: "Poppins";
+font-family: "Roboto";
 font-weight: 300;
-font-size: 1.5em;
-letter-spacing:.6rem;
+font-size: 1em;
+letter-spacing:.35rem;
 padding-top: 3em;
-padding-bottom: .25em;
+margin-bottom: 5em;
 color: black;
 text-align: center;
 }
@@ -62,17 +53,16 @@ text-align: center;
 }
 
 .logo {
-  background: url("../img/logo-1.png");
+  background: url("../img/hhyd-4.png");
   width: 100%;
-  height:500px;
-  background-size: auto 90%;
+  height:412px;
+  background-size: auto 100%;
   background-repeat: no-repeat;
   background-position:center;
-  margin-top: 1em;
+  margin-top: 4em;
+  margin-bottom: 1.2em;
 }
 
-.button:active,
-.button:visited,
 .button {
   color: white;
   background: #71797E;
@@ -83,7 +73,7 @@ text-align: center;
 }
 
 .button:Hover {
-    opacity: 54%;
+  opacity: 50%
 }
 
 .sign-in-header {
@@ -159,6 +149,7 @@ text-align: center;
   padding-top: 2.5em;
   font-size: 1em; 
   letter-spacing: -.05rem;
+  margin-bottom: 100px;
 }
 
 .need-account-text:Hover {
@@ -170,20 +161,20 @@ text-align: center;
 }
 
 .daylist-tagline {
-  font-family: "Poppins";
+  font-family: "Roboto";
   font-weight: 300;
-  font-size: 1.5em;
-  letter-spacing:.3rem;
+  font-size: 1em;
+  letter-spacing:.31rem;
   padding-top: 3em;
-  padding-bottom: .25em;
+  margin-bottom: 1em;
   color: black;
-  text-align: center;  
+  text-align: center;
 }
 
 .daylist-header {
   font-family: "Poppins";
   font-weight: 800;
-  font-size: 2.5em;
+  font-size: 4em;
   padding: 0em;
   letter-spacing: -.1rem;
   margin-top: .4em;
@@ -212,12 +203,12 @@ text-align: center;
 }
 
 .days-show-tagline {
-  font-family: "Poppins";
+  font-family: "Roboto";
   font-weight: 300;
-  font-size: 1.5em;
-  letter-spacing:.3rem;
-  padding-top: 2em;
-  padding-bottom: .3em;
+  font-size: 1em;
+  letter-spacing:.31rem;
+  padding-top: 3em;
+  margin-bottom: 1em;
   color: black;
   text-align: center;
 }
@@ -252,7 +243,7 @@ text-align: center;
   margin-top: .5em;
   margin-bottom: .9em;
   max-width: 325px;
-  padding: 1em;
+  padding: .8em;
   font-size: 1em;
   background-color: white ;
 }
@@ -280,31 +271,34 @@ text-align: center;
 
 .review-tile-rating {
   font-weight: 800;
-  font-size: .95em;
+  font-size: .9em;
   text-align: left;
   margin-top: .18em;
   margin-bottom: .1em;
   letter-spacing: -.02rem;
-  color: 	#303030;
+  color: 	#404040;
 }
 
 .review-tile-content {
+  font-family: "Roboto";
   font-size: .85em;
   font-weight: 300;
-  line-height: 1.5em;
+  line-height: 1.3em;
   margin-bottom: 0em;
 }
 
 .review-tile-userId {
-  font-weight: 600;
+  font-family: "Roboto";
+  font-weight: 500;
   font-size: .73em;
   margin-bottom: 0em;
   margin-top: .38em;
   letter-spacing: 0rem;
-  color: 	#303030;
+  color: 	#404040;
 }
 
 .review-tile-createdAt {
+  font-family: "Roboto";
   font-weight: 400;
   font-size: .5em;
   text-align: right;
@@ -361,12 +355,10 @@ text-align: center;
 }
 
 .average-rating-text {
-  font-family: "Poppins";
+  font-family: "Roboto";
   font-weight: 300;
   font-size: .9em;
   margin-top: -.1em;
   margin-bottom: 0em;
   text-align: center;
 }
-
-

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 const Home = (props) => {
     return (
         <div>
-            <div className="grid-x align-center home-page">RATE YOUR DAY
+            <div className="grid-x align-center home-page">RATE & REVIEW YOUR DAY
             <div className="cell small-12 align-center text-center logo">
             </div>
             </div>
