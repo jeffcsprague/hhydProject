@@ -40,9 +40,9 @@ const DayList = props => {
 
     return (
         <div>
-            <div className="grid-container align-center daylist-tagline">
+            <div className="grid-container align-center daylist-tagline">SELECT A DAY TO REVIEW
             <div className="grid-container align-center daylist-page">
-                <h1 className="text-center daylist-header">Pick a Day</h1>
+                <h1 className="text-center daylist-header">The Days</h1>
             </div>
             </div>
             <div className="grid-container daylist">
