@@ -14,7 +14,7 @@ const ReviewTile = ({ id, user, rating, content, createdAt }) => {
     const formatDate = new Date(createdAt).toLocaleDateString('en-us', { year:"numeric", month:"numeric", day:"numeric"}) 
     
     return( 
-        <div className="grid-container align-center review-tile">
+        <div className="grid-container align-center-middle review-tile">
             <div>
                 <Link to={`/days/${id}`}></Link>
             </div>

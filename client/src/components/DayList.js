@@ -39,21 +39,15 @@ const DayList = props => {
     })
 
     return (
-        <div>
-            <div className="grid-container align-center daylist-tagline">SELECT A DAY TO REVIEW
-            <div className="grid-container align-center daylist-page">
-                <h1 className="text-center daylist-header">The Days</h1>
-            </div>
-            </div>
-            <div className="grid-container daylist">
-                <div className="grid-container align-center text-center list">
-                <div>
-                    {dayListItems}
-                </div>
+        <div className="Grid-container text-center align-center-middle daylist-page">
+            <h3 className="cell daylist-tagline">SELECT A DAY TO REVIEW</h3>
+            <h1 className="cell daylist-header">The Days</h1>
+            <div className="grid-x align-center-middle daylist">
+                <div className="cell list">
+                {dayListItems}
                 </div>
             </div>
-            <div className="grid-x align-center align-middle footer">© 2022 Hey How’s Your Day
-            </div>
+            <div className="grid-x align-center-middle footer">© 2022 Hey How’s Your Day</div>
         </div>
     )
 }
