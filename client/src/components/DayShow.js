@@ -97,23 +97,18 @@ const DayShow = props => {
     const reversed = ReviewTiles.reverse()
    
     return(
-        <div className="grid-container mainDiv">
-            <div className="grid-container align-center days-show-tagline">READ & WRITE REVIEWS
-            </div>
-            <div className="grid-container text-center align-center days-show-average">{modifiedAverage}
-            </div>
-            <p className= "text-center align-center average-rating-text">(AVERAGE RATING)</p>
-            <div className="grid-container align-center days-show-header">
-                <h1 className="text-center days-show-header-text">{dayjs(thisDate).format("M.DD.YY")}</h1>
-            </div>
-            <div className="grid-container align-center days-show-review-tiles">{ReviewTiles} 
-                <div className="text-center new-review-container">
-                    <ErrorListForm errors={errors} />
-                    <NewReviewForm postReview={postReview} />
+        <div className="grid-container day-show-page">
+            <h3 className="cell days-show-tagline">READ & WRITE REVIEWS</h3>
+            <h1 className="cell days-show-average">{modifiedAverage}</h1>
+            <h4 className= "text-center align-center average-rating-text">(AVERAGE RATING)</h4>
+            <h2 className="text-center days-show-header-text">{dayjs(thisDate).format("M.DD.YY")}</h2>
+            <div className="grid-container days-show-review-tiles">{ReviewTiles} 
+                <div className="cell text-center new-review-container">
+                    <ErrorListForm errors={errors}/>
+                    <NewReviewForm postReview={postReview}/>
                 </div>
             </div>              
-            <div className="grid-x align-center align-middle footer">© 2022 Hey How’s Your Day
-            </div>
+            <div className="grid-x align-center-middle footer">© 2022 Hey How’s Your Day</div>
         </div>
     )
 }
