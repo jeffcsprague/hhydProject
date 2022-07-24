@@ -30,7 +30,7 @@ const NewReviewForm = (props) => {
 
     return (
         <div className="new-review-form" id="new-review-form">
-            <h1 className="new-review-form-header text-left">Add Review</h1>
+            <h1 className="new-review-form-header text-left">Add Your Review</h1>
             <form onSubmit={handleSubmit}>
                 <label className="text-left new-review-form-rating">Rate this Day
                     <select id="choice"
@@ -56,7 +56,7 @@ const NewReviewForm = (props) => {
                         rows="5"
                     ></textarea>
                 </label>
-                <div className="button-group new-review-form-button">
+                <div className="button-group expanded new-review-form-button">
                 <input  className="button" type="submit" value="Submit"/> 
                 <a name="end"></a>
                 </div>           
