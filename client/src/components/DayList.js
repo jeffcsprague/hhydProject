@@ -30,7 +30,7 @@ const DayList = props => {
 
     const dayListItems = days.map((day) => {
         return(
-            <div key={day.id}>
+            <div className="daylist-rolodex" key={day.id}>
                 <Link to={`/days/${day.id}`}>
                     {dayjs(day.date).format("MMMM DD YYYY")}
                 </Link>
