@@ -9,7 +9,7 @@ const Home = (props) => {
             <div className="grid-x align-center-middle create-account-button">
                 <Link to="/users/new" className="cell button expanded" href="#">Create an Account</Link>
             </div>
-            <div className="grid-x align-center-middle footer">988 suicide and crisis lifeline dial 988</div>
+            <div className="grid-x align-center-middle footer">988 SUICIDE & CRISIS HOTLINE DIAL 988</div>
         </div>
     )
 }
