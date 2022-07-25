@@ -27,6 +27,30 @@ class UserSeeder {
       {
         email: "tobiasdream@workn.com",
         cryptedPassword: Bcrypt.hashSync("summer", 10),
+      },
+      {
+        email: "yeet12@gmail.com",
+        cryptedPassword: Bcrypt.hashSync("cheese", 10),
+      },
+      {
+        email: "reversethecurse@outlook.com",
+        cryptedPassword: Bcrypt.hashSync("manhattan", 10),
+      },
+      {
+        email: "tunamelt8974@gmail.com",
+        cryptedPassword: Bcrypt.hashSync("landscape", 10),
+      },
+      {
+        email: "chickenl3ggz@burpees.com",
+        cryptedPassword: Bcrypt.hashSync("palace", 10),
+      },
+      {
+        email: "topherynot56@gmail.com",
+        cryptedPassword: Bcrypt.hashSync("winter", 10),
+      },
+      {
+        email: "therealtombrady@cleanocean.com",
+        cryptedPassword: Bcrypt.hashSync("summer", 10),
       }
     ];
 
