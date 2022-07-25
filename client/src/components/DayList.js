@@ -47,7 +47,7 @@ const DayList = props => {
                 {dayListItems}
                 </div>
             </div>
-            <div className="grid-x align-center-middle footer">988 Suicide & Crisis Lifeline at 988</div>
+            <div className="grid-x align-center-middle footer">Suicide & Crisis Lifeline at 988</div>
         </div>
     )
 }

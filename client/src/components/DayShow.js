@@ -108,7 +108,7 @@ const DayShow = props => {
                     <NewReviewForm postReview={postReview}/>
                 </div>
             </div>              
-            <div className="grid-x align-center-middle footer">988 Suicide & Crisis Lifeline at 988</div>
+            <div className="grid-x align-center-middle footer">Suicide & Crisis Lifeline at 988</div>
         </div>
     )
 }
