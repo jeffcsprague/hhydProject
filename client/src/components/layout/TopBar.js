@@ -19,7 +19,6 @@ const TopBar = ({ user }) => {
     <div className="top-bar">
       <div className="top-bar-left">
         <ul className="menu">
-         
           <li>
           <Link to="/" className="home">Hey</Link>
           </li>
