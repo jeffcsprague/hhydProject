@@ -125,7 +125,7 @@ const RegistrationForm = () => {
         </div>
       </form>
       <div className="grid-x align-center fill"></div>
-      <div className="grid-x align-center align-middle footer">© 2022 Hey How’s Your Day</div>
+      <div className="grid-x align-center align-middle footer">988 suicide and crisis lifeline dial 988</div>
     </div>
   );
 };
