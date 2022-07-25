@@ -96,7 +96,7 @@ const SignInForm = () => {
       <div className="grid-x align-center need-account">
                 <Link to="/users/new" className="need-account-text" href="#">Need an Account ?</Link>
             </div>
-      <div className="grid-x align-center align-middle footer">988 SUICIDE & CRISIS HOTLINE DIAL 988</div>
+      <div className="grid-x align-center align-middle footer">988—SUICIDE & CRISIS HOTLINE DIAL—988</div>
      
     </div>
   );

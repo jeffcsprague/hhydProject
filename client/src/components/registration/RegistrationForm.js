@@ -125,7 +125,7 @@ const RegistrationForm = () => {
         </div>
       </form>
       <div className="grid-x align-center fill"></div>
-      <div className="grid-x align-center align-middle footer">988 SUICIDE & CRISIS HOTLINE DIAL 988</div>
+      <div className="grid-x align-center align-middle footer">988—SUICIDE & CRISIS HOTLINE DIAL—988</div>
     </div>
   );
 };
