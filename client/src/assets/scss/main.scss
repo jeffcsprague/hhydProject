@@ -3,7 +3,8 @@
 @include foundation-everything;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
 // place global css here
 *,
 *::before,
@@ -52,7 +53,7 @@ text-align: center;
 }
 
 .logo {
-  background: url("../img/hhyd-4.png");
+  background: url("../img/hhyd-logo.png");
   width: 100%;
   height:412px;
   background-size: auto 100%;
@@ -182,8 +183,8 @@ text-align: center;
   height: 400px;
   width:325px;
   font-family:Roboto;
-  font-weight: 400;
-  color: black !important;
+  font-weight: 300;
+  color: black;
   font-size: 1.25em;
   text-align: center;
   text-justify: inter-character;
@@ -197,6 +198,12 @@ text-align: center;
   padding-top: .2em;
   padding-bottom: .3em;
   border: 1px solid #B0B0B0;
+}
+
+a {
+  color: #404040;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 .daylist-rolodex {
@@ -276,7 +283,7 @@ text-align: center;
 
 .review-tile-rating {
   font-weight: 800;
-  font-size: .9em;
+  font-size: 1em;
   text-align: left;
   margin-top: .18em;
   margin-bottom: .1em;
@@ -285,30 +292,35 @@ text-align: center;
 }
 
 .review-tile-content {
-  font-family: "Roboto";
-  font-size: .85em;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-size: 1em;
   font-weight: 300;
   line-height: 1.25em;
   margin-bottom: 0em;
 }
 
+.review-tile-bottom-container {
+  margin-top: .5em;
+}
+
 .review-tile-userId {
   font-family: "Roboto";
   font-weight: 500;
-  font-size: .73em;
-  margin-bottom: 0em;
-  margin-top: .38em;
+  font-size: .85em;
+  padding: 0;
+  margin: 0;
   letter-spacing: 0rem;
   color: 	#404040;
 }
 
 .review-tile-createdAt {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: .5em;
+  font-family: "Roboto Condensed";
+  font-weight: 300;
+  font-size: .7em;
   text-align: right;
-  margin-bottom: 0;
-  margin-top: 0em;
+  padding: 0;
+  margin: 0;
   color: 	#404040;
 }
 
@@ -320,14 +332,14 @@ text-align: center;
   font-size: 1em;
   background-color: white 
   opacity 10%;
-  border: 1px solid #B0B0B0;
+  border-top: 1px solid #B0B0B0;
   color: #404040;
 
 }
 
 .new-review-form-header {
   font-family: "poppins";
-  font-weight: 700;
+  font-weight: 800;
   font-size: 1em;
   color: #404040;
   padding-top: .6em;
