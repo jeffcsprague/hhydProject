@@ -18,7 +18,6 @@ const NewReviewForm = (props) => {
         event.preventDefault()
         postReview(newReview)
         clearForm()
-        window.location.reload()
     }
 
     const clearForm = () => {
