@@ -252,28 +252,17 @@ a {
   font-weight: 300;
   color: 	#383838;
   margin-bottom: 0em;
-  max-width: 325px;
+  max-width: 740px;
   padding: 1em;
   font-size: 1em;
-  background-color: white 
-  opacity 10%;
-  border: 1px solid #D3D3D3;
+  border-top: 1px solid #D3D3D3;
 }
 
 .days-show-review-tiles {
-  height: 390px;
-  width:325px;
-  overflow-y: scroll;
-  scrollbar-color: auto;
-  scrollbar-width: auto;
-  box-shadow: 0 0 20px #B0B0B0 inset;
-  background-color: white;
-  padding-top: .2em;
-  padding-bottom: .3em;
-  padding-left: 0em;
-  padding-right: 0em;
-  border: 1px solid #B0B0B0;
-  margin-bottom: 100px
+  max-width: 740px;
+  padding-top: 0em;
+  margin-top: 1.5em;
+  margin-bottom: 0em;
 }
 
 .add-review-button {
@@ -326,15 +315,16 @@ a {
 
 .new-review-form {
   margin-top: 0em;
-  margin-bottom: 0em;
-  max-width: 325px;
-  padding: 1em;
+  margin-bottom: 10em;
+  width: 740px;
+  padding: 1.8em;
   font-size: 1em;
   background-color: white 
   opacity 10%;
-  border-top: 1px solid #B0B0B0;
+  background-color:#F8F8F8;
   color: #404040;
-
+  border-top: 1px solid #D3D3D3;
+  border-bottom: 1px solid #D3D3D3;
 }
 
 .new-review-form-header {
@@ -370,7 +360,7 @@ a {
 }
 
 .new-review-form-button{
-  margin-top: .4em;
+  margin-top: 3em;
   margin-bottom: .3em;
 }
 
