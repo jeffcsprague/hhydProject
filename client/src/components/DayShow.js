@@ -102,11 +102,11 @@ const DayShow = props => {
             <h1 className="cell days-show-average">{modifiedAverage}</h1>
             <h4 className= "text-center align-center average-rating-text">(AVERAGE RATING)</h4>
             <h2 className="text-center days-show-header-text">{dayjs(thisDate).format("M.DD.YY")}</h2>
-            <div className="grid-container days-show-review-tiles">{ReviewTiles} 
-                <div className="cell text-center new-review-container">
+            <div className="grid-container align-center days-show-review-tiles">{ReviewTiles} 
+            </div>
+            <div className="grid-x align-center new-review-container">
                     <ErrorListForm errors={errors}/>
                     <NewReviewForm postReview={postReview}/>
-                </div>
             </div>              
             <div className="grid-x align-center-middle footer">988—SUICIDE & CRISIS HOTLINE DIAL—988</div>
         </div>

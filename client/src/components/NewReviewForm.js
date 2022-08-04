@@ -4,7 +4,7 @@ const NewReviewForm = (props) => {
     const {postReview} = props
     const [newReview, setNewReview] = useState({
         rating: "",
-        content: ""
+        content: "",
     })
 
     const handleInputChange = event => {
@@ -55,7 +55,7 @@ const NewReviewForm = (props) => {
                         rows="5"
                     ></textarea>
                 </label>
-                <div className="button-group expanded new-review-form-button">
+                <div className="button-group expanded align-center new-review-form-button">
                 <input  className="button" type="submit" value="Submit"/> 
                 <a name="end"></a>
                 </div>           
