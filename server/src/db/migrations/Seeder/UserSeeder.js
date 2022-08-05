@@ -49,7 +49,7 @@ class UserSeeder {
         cryptedPassword: Bcrypt.hashSync("winter", 10),
       },
       {
-        email: "therealtombrady@cleanocean.com",
+        email: "realtombrady@cleanocean.com",
         cryptedPassword: Bcrypt.hashSync("summer", 10),
       }
     ];

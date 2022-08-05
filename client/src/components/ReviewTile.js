@@ -21,7 +21,7 @@ const ReviewTile = ({ id, user, rating, content, createdAt }) => {
             <p className="review-tile-rating"> {rating} </p>
             <p className="review-tile-content"> {content} </p>
         <div className="grid-x align-middle review-tile-bottom-container">
-            <p className="cell small-6 review-tile-userId"> {user.email} </p>
+            <p className="cell small-6 review-tile-userId">— {user.email} </p>
             <p className="cell small-6 review-tile-createdAt"> {formatDate} </p>
         </div>
         </div>

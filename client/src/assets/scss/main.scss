@@ -122,7 +122,7 @@ text-align: center;
   left: 0;
   right: 0;
   width: 100%;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto";
   font-weight: 400;
   font-size: .75em; 
 }
@@ -245,14 +245,12 @@ a {
 .review-tile {
   margin-bottom: 0em;
   max-width: 740px;
-  padding: 1em;
+  padding: .8em;
   border-top: 1px solid #D3D3D3;
 }
 
 .days-show-review-tiles {
-  max-width: 740px;
   padding-top: 0em;
-  margin-top: 1.5em;
   margin-bottom: 0em;
 }
 
@@ -264,9 +262,9 @@ a {
 .review-tile-rating {
   font-family: "Font Awesome 6 Pro";
   font-weight: 300;
-  font-size: 1.25em;
+  font-size: 1.2em;
   text-align: left;
-  margin-top: .18em;
+  margin-top: 0em;
   margin-bottom: .3em;
   color:#383838;
 }
@@ -282,7 +280,8 @@ a {
 }
 
 .review-tile-bottom-container {
-  margin-top: .5em;
+  margin-top: .3em;
+  margin-bottom: .7em;
 }
 
 .review-tile-userId {
