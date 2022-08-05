@@ -32,14 +32,15 @@ const NewReviewForm = (props) => {
             <h1 className="new-review-form-header text-left">Add Your Review</h1>
             <form onSubmit={handleSubmit}>
                 <label className="text-left new-review-form-rating">Rate this Day
-                    <select id="choice"
+
+                    <select className="choice"
                         name="rating"
                         onChange={handleInputChange}
                         value={newReview.rating}
                     >
                         <option defaultValue="disabled selected">Select your rating</option>
-                        <option value="2">OK</option>
-                        <option value="3">Good</option>
+                        <option value="2" >OK</option>
+                        <option value="3" >Good</option>
                         <option value="1">Bad</option>
                     </select>
                 </label>
