@@ -60,9 +60,9 @@ const DayShow = props => {
                 }   
             }   else {
                 const body = await response.json()
-                    const updatedReviews = day.reviews.concat(body.review)
-                    setErrors([])
-                    setDay({...day, reviews: updatedReviews})               
+                const updatedReviews = day.reviews.concat(body.review)
+                setErrors([])
+                setDay({...day, reviews: updatedReviews})               
             }
         }   catch(error) {
             console.error(`Error in fetch: ${error.message}`)
