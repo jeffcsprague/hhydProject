@@ -232,29 +232,20 @@ a {
 }
 
 .days-show-average {
-  font-family: "Poppins";
-  font-weight: 900;
-  font-size: 5.54em;
+  font-family: "Font Awesome 6 Pro";
+  font-weight: 500;
+  font-size: 7.5em;
   letter-spacing: -.05rem;
-  margin: 0em;
+  margin-bottom: .15em;
   text-align: center;
-  padding: 0em;
   line-height: 1em;
-  color:white
-}
-
-.days-show-average {
-  -webkit-text-stroke: 2px#71797E;;
+  color:black;
 }
 
 .review-tile {
-  font-family: "Poppins";
-  font-weight: 300;
-  color: 	#383838;
   margin-bottom: 0em;
   max-width: 740px;
   padding: 1em;
-  font-size: 1em;
   border-top: 1px solid #D3D3D3;
 }
 
@@ -267,17 +258,17 @@ a {
 
 .add-review-button {
   padding-top: 1em;
-  padding-bottom: 1em;
+  padding-bottom: 1.125em;
 }
 
 .review-tile-rating {
-  font-weight: 800;
-  font-size: 1em;
+  font-family: "Font Awesome 6 Pro";
+  font-weight: 300;
+  font-size: 1.25em;
   text-align: left;
   margin-top: .18em;
-  margin-bottom: .1em;
-  letter-spacing: -.02rem;
-  color: 	#404040;
+  margin-bottom: .3em;
+  color:#383838;
 }
 
 .review-tile-content {
@@ -287,6 +278,7 @@ a {
   font-weight: 300;
   line-height: 1.25em;
   margin-bottom: 0em;
+  color: 	#404040;
 }
 
 .review-tile-bottom-container {
@@ -343,7 +335,7 @@ a {
   color: #404040;
 }
 
-#choice option{ 
+.choice option{ 
     color: #404040;
 }
 
@@ -368,7 +360,7 @@ a {
   font-family: "Roboto";
   font-weight: 300;
   font-size: .9em;
-  margin-top: -.1em;
-  margin-bottom: 0em;
+  margin-top: 0em;
+  margin-bottom: .6em;
   text-align: center;
 }

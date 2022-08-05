@@ -78,11 +78,11 @@ const DayShow = props => {
     
     let modifiedAverage = dayRatingAverage
     if (modifiedAverage<=1.6625) {
-        modifiedAverage = "BAD"
+        modifiedAverage =  "\uf119"
     } else if (modifiedAverage>=2.33125) {
-        modifiedAverage = "GOOD"
+        modifiedAverage = "\uf118"
     } else {
-        modifiedAverage = "OK"
+        modifiedAverage = "\uf11a"
     }
 
     const ReviewTiles = day.reviews.map((reviewObject) => {

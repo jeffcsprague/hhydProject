@@ -4,11 +4,11 @@ import { Link } from "react-router-dom"
 const ReviewTile = ({ id, user, rating, content, createdAt }) => {
 
     if (rating<2) {
-        rating = "BAD"
+        rating = "\uf119"
     } else if (rating>=3) {
-        rating = "GOOD"
+        rating = "\uf118"
     } else {
-        rating = "OK"
+        rating = "\uf11a"
     }
     
     const formatDate = new Date(createdAt).toLocaleDateString('en-us', { year:"numeric", month:"numeric", day:"numeric"}) 
