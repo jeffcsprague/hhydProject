@@ -102,9 +102,11 @@ const DayShow = props => {
             <h2 className="text-center days-show-header-text">{dayjs(thisDate).format("M.DD.YY")}</h2>
             <div className="grid-container align-center days-show-review-tiles">{ReviewTiles} 
             </div>
+            <div className="grid-x align-center new-review-errors">
+                <ErrorListForm errors={errors}/>
+            </div>
             <div className="grid-x align-center new-review-container">
-                    <ErrorListForm errors={errors}/>
-                    <NewReviewForm postReview={postReview}/>
+                 <NewReviewForm postReview={postReview}/>
             </div>              
             <div className="grid-x align-center-middle footer">988—SUICIDE & CRISIS HOTLINE DIAL—988</div>
         </div>
