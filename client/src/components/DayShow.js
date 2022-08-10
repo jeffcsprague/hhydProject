@@ -94,8 +94,6 @@ const DayShow = props => {
         )
     })   
    
-    const reversed = ReviewTiles.reverse()
-   
     return(
         <div className="grid-container day-show-page">
             <h3 className="cell days-show-tagline">READ & WRITE REVIEWS</h3>
