@@ -78,13 +78,13 @@ const DayShow = props => {
     
     let modifiedAverage = dayRatingAverage
     if (modifiedAverage<=1.6625) {
-        modifiedAverage =  "\uf119"
+        modifiedAverage =  <i className="fa-regular fa-face-frown"></i>
     } else if (modifiedAverage>=2.33125) {
-        modifiedAverage = "\uf118"
+        modifiedAverage = <i className="fa-regular fa-face-smile"></i>
     } else {
-        modifiedAverage = "\uf11a"
+        modifiedAverage = <i className="fa-regular fa-face-meh"></i>
     }
-
+    
     const ReviewTiles = day.reviews.map((reviewObject) => {
         return (
             <ReviewTile
