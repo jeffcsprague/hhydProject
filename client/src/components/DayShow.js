@@ -102,6 +102,8 @@ const DayShow = props => {
    
     return(
         <div className="grid-container day-show-page">
+            <i class="fa-brands fa-android"></i>
+
             <h3 className="cell days-show-tagline">READ & WRITE REVIEWS</h3>
             <h1 className="cell days-show-average">{modifiedAverage}</h1>
             <h4 className= "text-center align-center average-rating-text">(AVERAGE RATING)</h4>
