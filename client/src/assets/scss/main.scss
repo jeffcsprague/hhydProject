@@ -232,7 +232,6 @@ a {
 }
 
 .days-show-average {
-  font-size: 7em;
   text-align: center;
   color:black;
 }
@@ -362,4 +361,26 @@ a {
 .callout.alert {
   font-family: "Roboto";
   width: 740px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'GRAD' 0,
+}
+
+span.size-150 {
+  font-size: 150px;
+  font-weight: 500;
+  vertical-align: middle;
+  font-variation-settings:
+  'OPSZ' 48;
+}
+
+span.size-28 {
+  font-size: 28px;
+  font-weight: 200;
+  vertical-align: middle;
+  font-variation-settings:
+  'OPSZ' 28;
 }
