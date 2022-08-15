@@ -78,17 +78,11 @@ const DayShow = props => {
     
     let modifiedAverage = dayRatingAverage
     if (modifiedAverage<=1.6625) {
-        modifiedAverage =  <span className="material-symbols-outlined size-150">
-        sentiment_dissatisfied
-        </span>
+        modifiedAverage =  <i className="fa-regular fa-face-frown"></i>
     } else if (modifiedAverage>=2.33125) {
-        modifiedAverage = <span className="material-symbols-outlined size-150">
-        sentiment_satisfied
-        </span>
+        modifiedAverage = <i className="fa-regular fa-face-smile"></i>
     } else {
-        modifiedAverage = <span className="material-symbols-outlined size-150">
-        sentiment_neutral
-        </span>
+        modifiedAverage = <i className="fa-regular fa-face-meh"></i>
     }
     
     const ReviewTiles = day.reviews.map((reviewObject) => {
@@ -102,8 +96,6 @@ const DayShow = props => {
    
     return(
         <div className="grid-container day-show-page">
-            <i class="fa-brands fa-android"></i>
-
             <h3 className="cell days-show-tagline">READ & WRITE REVIEWS</h3>
             <h1 className="cell days-show-average">{modifiedAverage}</h1>
             <h4 className= "text-center align-center average-rating-text">(AVERAGE RATING)</h4>
