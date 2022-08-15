@@ -8,11 +8,17 @@ dayjs().format()
 const ReviewTile = ({ id, user, rating, content, createdAt }) => {
 
     if (rating<2) {
-        rating = <i className="fa-light fa-face-frown"></i>
+        rating = <span className="material-symbols-outlined size-28">
+        sentiment_dissatisfied
+        </span>
     } else if (rating>=3) {
-        rating = <i className="fa-light fa-face-smile"></i>
+        rating = <span className="material-symbols-outlined size-28">
+        sentiment_satisfied
+        </span>
     } else {
-        rating = <i className="fa-light fa-face-meh"></i>
+        rating = <span className="material-symbols-outlined size-28">
+        sentiment_neutral
+        </span>
     }
        
     return( 
